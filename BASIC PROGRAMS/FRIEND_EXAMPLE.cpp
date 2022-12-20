@@ -3,8 +3,8 @@
 		Write a program to find the larger of two given numbers in two different classes using
 		friend function
 */
-#include<iostream.h>
-#include<conio.h>
+#include<iostream>
+using namespace std;
 	class B;  //forward declaration
 class A
 {
@@ -40,11 +40,10 @@ void greater(A obj1 , B obj2)
 	}
 
 }
-void main()
+int main()
 {
-	clrscr();
 	A obj1;
 	B obj2;
 	greater( obj1, obj2);
-	getch();
+	return 0;
 }
